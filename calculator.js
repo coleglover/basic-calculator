@@ -55,7 +55,8 @@ function handleSymbol(value) {
             previousOperator = null;
             numberInFocus = "" + runningTotal;
             break;
-
+        
+        // if none of the symbols above were used, it was an arithmatic operator, thus fire handleMath
         default:
             handleMath(value);
             break;            
