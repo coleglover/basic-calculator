@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/* THIS HOUSES THE CALC BUTTONS AND ACTS AS GUTTERS BETWEEN BUTTONS */
+.calc-container {
+    background-color: black;
+    width: 400px;
+}
+
+.screen {
+    text-align: right;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 40px;
+    padding: 20px 5px;
+    color: white;
+}
+
+.row-container {
+    display: flex;
+    align-content: stretch;
+    justify-content: space-between;
+
+    margin-bottom: .5%;
+    height: 100px;
+    width: 100%;
+}
+
+.calc-button {
+    height: 100px;
+    width: 24.5%;
+
+    /* buttons naturally have a border around them -- remove them -- we add our own */
+    border: none;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.calc-button:last-child {
+    color:white;
+    background-color: #ffa805;
+}
+
+/* define hover/active color states for buttons */
+.calc-button:hover {background-color: #E0E0E0;}
+.calc-button:active {background-color: #bdbcbc;}
+
+.calc-button:last-child:hover {background-color: #ffb429;}
+.calc-button:last-child:active{background-color: #e49400;}
+
+
+.quarter {
+    color: black;
+    background-color: #D3D3D3;
+}
+
+.half {
+    color: black;
+    background-color: #D3D3D3;
+    width: 49.68%;
+}
+
+.three-quarter {
+    color: black;
+    background-color: #D3D3D3;
+    width: 74.8%;
+}
+
+.calc-button:last-child {
+    color:white;
+    background-color: #ffa805;
+}
+

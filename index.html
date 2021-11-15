@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+
+    <title>Basic Calculator</title>
+</head>
+
+<body>
+    <!-- background that acts as button margins // CONTAINER HOUSES ALL BUTTONS -->
+    <div class="calc-container">
+
+            <!-- row (1) top: ACTS AS INPUT BOX -->
+    <section class = "screen">0</section>
+
+    <section class = "calc-buttons">
+        <!-- row 2 -->
+        <div class= row-container>
+            <!-- creating individual calculator buttons-->
+            <button class="calc-button half">C</button>
+            <button class="calc-button quarter">←</button>
+            <button class="calc-button quarter">÷</button>
+        </div>
+
+        <!-- row 3 -->
+        <div class= row-container>
+            <button class="calc-button quarter">7</button>
+            <button class="calc-button quarter">8</button>
+            <button class="calc-button quarter">9</button>
+            <button class="calc-button quarter">×</button>
+
+        </div>
+
+        <!-- row 4 -->
+        <div class= row-container>
+            <button class="calc-button quarter">6</button>
+            <button class="calc-button quarter">5</button>
+            <button class="calc-button quarter">4</button>
+            <button class="calc-button quarter">+</button>
+        </div>
+
+        <!-- row 5 -->
+        <div class = row-container>
+            <button class="calc-button quarter">3</button>
+            <button class="calc-button quarter">2</button>
+            <button class="calc-button quarter">1</button>
+            <button class="calc-button quarter">−</button>
+        </div>
+
+        <!-- row (6) bottom -->
+        <div class= row-container>
+            <button class="calc-button three-quarter">0</button>
+            <button class="calc-button quarter">=</button>
+        </div>
+    </section>
+</body>
+<!-- ADDING THIS BELOW HERE SO THAT ALL HTML LOADS BEFORE THE JS HAVE TO LOAD-->
+<script src="./calculator.js"></script>
+</html>
